@@ -15,6 +15,12 @@
 		50EECAF615CAA82C006E54FA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EECAF415CAA82C006E54FA /* MainMenu.xib */; };
 		50EECB0915CAA863006E54FA /* CocoaLibSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EECB0615CAA856006E54FA /* CocoaLibSpotify.framework */; };
 		50EECB0D15CAA879006E54FA /* CocoaLibSpotify.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 50EECB0615CAA856006E54FA /* CocoaLibSpotify.framework */; };
+		F1403EE119F82336007086E2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1403EDF19F82336007086E2 /* LoginViewController.m */; };
+		F1403EE219F82336007086E2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1403EE019F82336007086E2 /* LoginViewController.xib */; };
+		F1403EE419F83F3D007086E2 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; };
+		F1403EE519F83F3D007086E2 /* myo.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F180BCEB19F8031B005B29EF /* MyoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F180BCEA19F8031B005B29EF /* MyoHelper.mm */; };
+		F180BCEF19F80504005B29EF /* SpotifyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F180BCEE19F80504005B29EF /* SpotifyHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F1403EE519F83F3D007086E2 /* myo.framework in Copy Frameworks */,
 				50EECB0D15CAA879006E54FA /* CocoaLibSpotify.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -70,6 +77,14 @@
 		50EECAF215CAA82C006E54FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		50EECAF515CAA82C006E54FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		50EECAFC15CAA856006E54FA /* CocoaLibSpotify Mac Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CocoaLibSpotify Mac Framework.xcodeproj"; path = "../../CocoaLibSpotify Mac Framework.xcodeproj"; sourceTree = "<group>"; };
+		F1403EDE19F82336007086E2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F1403EDF19F82336007086E2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F1403EE019F82336007086E2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F180BCE519F801B9005B29EF /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = MyoFy/myo.framework; sourceTree = "<group>"; };
+		F180BCE919F8031B005B29EF /* MyoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyoHelper.h; sourceTree = "<group>"; };
+		F180BCEA19F8031B005B29EF /* MyoHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyoHelper.mm; sourceTree = "<group>"; };
+		F180BCED19F80504005B29EF /* SpotifyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyHelper.h; sourceTree = "<group>"; };
+		F180BCEE19F80504005B29EF /* SpotifyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifyHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50EECB0915CAA863006E54FA /* CocoaLibSpotify.framework in Frameworks */,
+				F1403EE419F83F3D007086E2 /* myo.framework in Frameworks */,
 				50EECAE015CAA82C006E54FA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +122,7 @@
 		50EECADE15CAA82C006E54FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F180BCE519F801B9005B29EF /* myo.framework */,
 				50EECADF15CAA82C006E54FA /* Cocoa.framework */,
 				50EECAE115CAA82C006E54FA /* Other Frameworks */,
 			);
@@ -125,8 +142,13 @@
 		50EECAE515CAA82C006E54FA /* MyoFy */ = {
 			isa = PBXGroup;
 			children = (
+				F180BCEC19F804EF005B29EF /* SpotifyHelper */,
+				F180BCE819F8031B005B29EF /* MyoHelper */,
 				50EECAF115CAA82C006E54FA /* AppDelegate.h */,
 				50EECAF215CAA82C006E54FA /* AppDelegate.m */,
+				F1403EDE19F82336007086E2 /* LoginViewController.h */,
+				F1403EDF19F82336007086E2 /* LoginViewController.m */,
+				F1403EE019F82336007086E2 /* LoginViewController.xib */,
 				50EECAF415CAA82C006E54FA /* MainMenu.xib */,
 				50EECAE615CAA82C006E54FA /* Supporting Files */,
 			);
@@ -152,6 +174,24 @@
 				50EECB0815CAA856006E54FA /* CocoaLSTests.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F180BCE819F8031B005B29EF /* MyoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F180BCE919F8031B005B29EF /* MyoHelper.h */,
+				F180BCEA19F8031B005B29EF /* MyoHelper.mm */,
+			);
+			path = MyoHelper;
+			sourceTree = "<group>";
+		};
+		F180BCEC19F804EF005B29EF /* SpotifyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F180BCED19F80504005B29EF /* SpotifyHelper.h */,
+				F180BCEE19F80504005B29EF /* SpotifyHelper.m */,
+			);
+			path = SpotifyHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1403EE219F82336007086E2 /* LoginViewController.xib in Resources */,
 				50EECAEA15CAA82C006E54FA /* InfoPlist.strings in Resources */,
 				50EECAF015CAA82C006E54FA /* Credits.rtf in Resources */,
 				50EECAF615CAA82C006E54FA /* MainMenu.xib in Resources */,
@@ -243,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F180BCEF19F80504005B29EF /* SpotifyHelper.m in Sources */,
 				50EECAEC15CAA82C006E54FA /* main.m in Sources */,
+				F180BCEB19F8031B005B29EF /* MyoHelper.mm in Sources */,
 				50EECAF315CAA82C006E54FA /* AppDelegate.m in Sources */,
+				F1403EE119F82336007086E2 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,11 +383,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/CocoaLibSpotify.framework/Versions/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(CONFIGURATION_BUILD_DIR)/CocoaLibSpotify.framework/Versions/Frameworks",
+					"$(PROJECT_DIR)/MyoFy",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyoFy/MyoFy-Prefix.pch";
 				INFOPLIST_FILE = "MyoFy/MyoFy-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				PRODUCT_NAME = MyoFy;
 				WRAPPER_EXTENSION = app;
 			};
@@ -353,11 +400,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/CocoaLibSpotify.framework/Versions/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(CONFIGURATION_BUILD_DIR)/CocoaLibSpotify.framework/Versions/Frameworks",
+					"$(PROJECT_DIR)/MyoFy",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyoFy/MyoFy-Prefix.pch";
 				INFOPLIST_FILE = "MyoFy/MyoFy-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				PRODUCT_NAME = MyoFy;
 				WRAPPER_EXTENSION = app;
 			};
