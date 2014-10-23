@@ -12,4 +12,6 @@
 
 @interface SpotifyHelper : NSObject <SPSessionDelegate>
 
++(SpotifyHelper *)instance;
+-(void)newSong;
 @end

@@ -29,13 +29,14 @@
             return nil;
         }
         [[SPSession sharedSession] setDelegate:self];
+        [[SPSession sharedSession] attemptLoginWithUserName:@"" password:@""];
     }
     return self;
 }
 
 
 // Thread-safe singleton instance
--(SpotifyHelper *)instance {
++(SpotifyHelper *)instance {
     SpotifyHelper *instance = nil;
     @synchronized(self) {
         if(instance == nil) {
@@ -43,6 +44,15 @@
         }
     }
     return instance;
+}
+
+-(void)newSong
+{
+    NSURL *trackURL = [NSURL URLWithString:@"spotify:track:0dBy4Can9xDkZHDLSEHM41"];
+    if([[NSWorkspace sharedWorkspace] openURL:trackURL])
+    {
+        NSLog(@"Playing!!!");
+    }
 }
 
 #pragma mark -
