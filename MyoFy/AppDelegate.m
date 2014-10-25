@@ -7,11 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "SpotifyHelper/SpotifyHelper.h"
 
 @interface AppDelegate()
 @property (nonatomic, strong) Myo *myo;
-@property (nonatomic, strong) SpotifyHelper *spotify;
 @end
 
 @implementation AppDelegate
@@ -23,7 +21,6 @@
     [self.statusItem setTitle:@"MyoFy!"];
     [self.statusItem setHighlightMode:YES];
     
-    self.spotify = [SpotifyHelper instance];
     
     self.myo = [[Myo alloc] initWithApplicationIdentifier:@"co.keyurpatel.myofy"];
     self.myo.delegate = self;
@@ -44,35 +41,6 @@
             [self.myo startUpdate]; // Start Getting Updates From Myo (This Command Runs on Background Thread In Implemenation)
         });
     });
-    
-    CGEventSourceRef src =
-    CGEventSourceCreate(kCGEventSourceStateHIDSystemState);
-    
-    CGEventRef cmdd = CGEventCreateKeyboardEvent(src, (CGKeyCode)96, true);
-    CGEventRef cmdu = CGEventCreateKeyboardEvent(src, (CGKeyCode)96, false);
-    CGEventRef spcd = CGEventCreateKeyboardEvent(src, 0x31, true);
-    CGEventRef spcu = CGEventCreateKeyboardEvent(src, 0x31, false);
-    
-    CGEventSetFlags(spcd, kCGEventFlagMaskCommand);
-    CGEventSetFlags(spcu, kCGEventFlagMaskCommand);
-    
-    CGEventTapLocation loc = kCGHIDEventTap; // kCGSessionEventTap also works
-    CGEventPost(loc, cmdd);
-    CGEventPost(loc, spcd);
-    CGEventPost(loc, spcu);
-    CGEventPost(loc, cmdu);
-    
-    CFRelease(cmdd);
-    CFRelease(cmdu);
-    CFRelease(spcd);
-    CFRelease(spcu);
-    CFRelease(src);
-}
-
--(void)keyUp:(NSEvent *)event
-{
-    NSLog(@"Characters: %@", [event characters]);
-    NSLog(@"KeyCode: %hu", [event keyCode]);
 }
 
 -(void)myo:(Myo *)myo onPose:(MyoPose *)pose timestamp:(uint64_t)timestamp
@@ -80,10 +48,7 @@
     NSLog(@"%i", [pose poseType]);
     if([pose poseType] == MyoPoseTypeFist)
     {
-        if([[NSWorkspace sharedWorkspace] launchApplication:@"Spotify"])
-        {
-            [self.spotify newSong];
-        }
+        
     }
 }
 
@@ -94,13 +59,6 @@
 
 -(NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
 	// When quitting, you should logout and wait for logout completion before terminating.
-	if ([SPSession sharedSession].connectionState == SP_CONNECTION_STATE_LOGGED_OUT ||
-		[SPSession sharedSession].connectionState == SP_CONNECTION_STATE_UNDEFINED)
-		return NSTerminateNow;
-
-	[[SPSession sharedSession] logout:^{
-		[[NSApplication sharedApplication] replyToApplicationShouldTerminate:YES];
-	}];
 	return NSTerminateLater;
 }
 

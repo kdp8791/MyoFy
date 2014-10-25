@@ -7,10 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <CocoaLibSpotify/CocoaLibSpotify.h>
 #import "MyoHelper/MyoHelper.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, SPSessionDelegate, MyoDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, MyoDelegate>
 
 @property (nonatomic, strong) IBOutlet NSMenu *statusMenu;
 @property (nonatomic, strong) IBOutlet NSStatusItem *statusItem;

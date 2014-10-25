@@ -13,8 +13,6 @@
 		50EECAF015CAA82C006E54FA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 50EECAEE15CAA82C006E54FA /* Credits.rtf */; };
 		50EECAF315CAA82C006E54FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EECAF215CAA82C006E54FA /* AppDelegate.m */; };
 		50EECAF615CAA82C006E54FA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EECAF415CAA82C006E54FA /* MainMenu.xib */; };
-		F1403EE119F82336007086E2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1403EDF19F82336007086E2 /* LoginViewController.m */; };
-		F1403EE219F82336007086E2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1403EE019F82336007086E2 /* LoginViewController.xib */; };
 		F1403EE419F83F3D007086E2 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; };
 		F1403EE519F83F3D007086E2 /* myo.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F180BCEB19F8031B005B29EF /* MyoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F180BCEA19F8031B005B29EF /* MyoHelper.mm */; };
@@ -48,9 +46,6 @@
 		50EECAF115CAA82C006E54FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50EECAF215CAA82C006E54FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		50EECAF515CAA82C006E54FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F1403EDE19F82336007086E2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		F1403EDF19F82336007086E2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		F1403EE019F82336007086E2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F180BCE519F801B9005B29EF /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = MyoFy/myo.framework; sourceTree = "<group>"; };
 		F180BCE919F8031B005B29EF /* MyoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyoHelper.h; sourceTree = "<group>"; };
 		F180BCEA19F8031B005B29EF /* MyoHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyoHelper.mm; sourceTree = "<group>"; };
@@ -112,9 +107,6 @@
 				F180BCE819F8031B005B29EF /* MyoHelper */,
 				50EECAF115CAA82C006E54FA /* AppDelegate.h */,
 				50EECAF215CAA82C006E54FA /* AppDelegate.m */,
-				F1403EDE19F82336007086E2 /* LoginViewController.h */,
-				F1403EDF19F82336007086E2 /* LoginViewController.m */,
-				F1403EE019F82336007086E2 /* LoginViewController.xib */,
 				50EECAF415CAA82C006E54FA /* MainMenu.xib */,
 				50EECAE615CAA82C006E54FA /* Supporting Files */,
 			);
@@ -194,7 +186,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1403EE219F82336007086E2 /* LoginViewController.xib in Resources */,
 				50EECAEA15CAA82C006E54FA /* InfoPlist.strings in Resources */,
 				50EECAF015CAA82C006E54FA /* Credits.rtf in Resources */,
 				50EECAF615CAA82C006E54FA /* MainMenu.xib in Resources */,
@@ -211,7 +202,6 @@
 				50EECAEC15CAA82C006E54FA /* main.m in Sources */,
 				F180BCEB19F8031B005B29EF /* MyoHelper.mm in Sources */,
 				50EECAF315CAA82C006E54FA /* AppDelegate.m in Sources */,
-				F1403EE119F82336007086E2 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
