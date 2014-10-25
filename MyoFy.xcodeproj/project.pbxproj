@@ -13,39 +13,12 @@
 		50EECAF015CAA82C006E54FA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 50EECAEE15CAA82C006E54FA /* Credits.rtf */; };
 		50EECAF315CAA82C006E54FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EECAF215CAA82C006E54FA /* AppDelegate.m */; };
 		50EECAF615CAA82C006E54FA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EECAF415CAA82C006E54FA /* MainMenu.xib */; };
-		50EECB0915CAA863006E54FA /* CocoaLibSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EECB0615CAA856006E54FA /* CocoaLibSpotify.framework */; };
-		50EECB0D15CAA879006E54FA /* CocoaLibSpotify.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 50EECB0615CAA856006E54FA /* CocoaLibSpotify.framework */; };
 		F1403EE119F82336007086E2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1403EDF19F82336007086E2 /* LoginViewController.m */; };
 		F1403EE219F82336007086E2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1403EE019F82336007086E2 /* LoginViewController.xib */; };
 		F1403EE419F83F3D007086E2 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; };
 		F1403EE519F83F3D007086E2 /* myo.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F180BCEB19F8031B005B29EF /* MyoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F180BCEA19F8031B005B29EF /* MyoHelper.mm */; };
-		F180BCEF19F80504005B29EF /* SpotifyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F180BCEE19F80504005B29EF /* SpotifyHelper.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		50EECB0515CAA856006E54FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50EECAFC15CAA856006E54FA /* CocoaLibSpotify Mac Framework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 503D630F13258041007772CA;
-			remoteInfo = CocoaLibSpotify;
-		};
-		50EECB0715CAA856006E54FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50EECAFC15CAA856006E54FA /* CocoaLibSpotify Mac Framework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 504E4934155AA85400E1C0F7;
-			remoteInfo = CocoaLSTests;
-		};
-		50EECB0A15CAA868006E54FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50EECAFC15CAA856006E54FA /* CocoaLibSpotify Mac Framework.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 503D630E13258041007772CA;
-			remoteInfo = CocoaLibSpotify;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		50EECB0C15CAA86D006E54FA /* Copy Frameworks */ = {
@@ -55,7 +28,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F1403EE519F83F3D007086E2 /* myo.framework in Copy Frameworks */,
-				50EECB0D15CAA879006E54FA /* CocoaLibSpotify.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,15 +48,12 @@
 		50EECAF115CAA82C006E54FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50EECAF215CAA82C006E54FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		50EECAF515CAA82C006E54FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		50EECAFC15CAA856006E54FA /* CocoaLibSpotify Mac Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CocoaLibSpotify Mac Framework.xcodeproj"; path = "../../CocoaLibSpotify Mac Framework.xcodeproj"; sourceTree = "<group>"; };
 		F1403EDE19F82336007086E2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F1403EDF19F82336007086E2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F1403EE019F82336007086E2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F180BCE519F801B9005B29EF /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = MyoFy/myo.framework; sourceTree = "<group>"; };
 		F180BCE919F8031B005B29EF /* MyoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyoHelper.h; sourceTree = "<group>"; };
 		F180BCEA19F8031B005B29EF /* MyoHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyoHelper.mm; sourceTree = "<group>"; };
-		F180BCED19F80504005B29EF /* SpotifyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyHelper.h; sourceTree = "<group>"; };
-		F180BCEE19F80504005B29EF /* SpotifyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifyHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50EECB0915CAA863006E54FA /* CocoaLibSpotify.framework in Frameworks */,
 				F1403EE419F83F3D007086E2 /* myo.framework in Frameworks */,
 				50EECAE015CAA82C006E54FA /* Cocoa.framework in Frameworks */,
 			);
@@ -104,7 +72,6 @@
 		50EECAD015CAA82C006E54FA = {
 			isa = PBXGroup;
 			children = (
-				50EECAFC15CAA856006E54FA /* CocoaLibSpotify Mac Framework.xcodeproj */,
 				50EECAE515CAA82C006E54FA /* MyoFy */,
 				50EECADE15CAA82C006E54FA /* Frameworks */,
 				50EECADC15CAA82C006E54FA /* Products */,
@@ -142,7 +109,6 @@
 		50EECAE515CAA82C006E54FA /* MyoFy */ = {
 			isa = PBXGroup;
 			children = (
-				F180BCEC19F804EF005B29EF /* SpotifyHelper */,
 				F180BCE819F8031B005B29EF /* MyoHelper */,
 				50EECAF115CAA82C006E54FA /* AppDelegate.h */,
 				50EECAF215CAA82C006E54FA /* AppDelegate.m */,
@@ -167,15 +133,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		50EECAFD15CAA856006E54FA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				50EECB0615CAA856006E54FA /* CocoaLibSpotify.framework */,
-				50EECB0815CAA856006E54FA /* CocoaLSTests.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F180BCE819F8031B005B29EF /* MyoHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,15 +140,6 @@
 				F180BCEA19F8031B005B29EF /* MyoHelper.mm */,
 			);
 			path = MyoHelper;
-			sourceTree = "<group>";
-		};
-		F180BCEC19F804EF005B29EF /* SpotifyHelper */ = {
-			isa = PBXGroup;
-			children = (
-				F180BCED19F80504005B29EF /* SpotifyHelper.h */,
-				F180BCEE19F80504005B29EF /* SpotifyHelper.m */,
-			);
-			path = SpotifyHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +157,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				50EECB0B15CAA868006E54FA /* PBXTargetDependency */,
 			);
 			name = MyoFy;
 			productName = "Empty CocoaLibSpotify Project";
@@ -235,35 +182,12 @@
 			mainGroup = 50EECAD015CAA82C006E54FA;
 			productRefGroup = 50EECADC15CAA82C006E54FA /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 50EECAFD15CAA856006E54FA /* Products */;
-					ProjectRef = 50EECAFC15CAA856006E54FA /* CocoaLibSpotify Mac Framework.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				50EECADA15CAA82C006E54FA /* MyoFy */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		50EECB0615CAA856006E54FA /* CocoaLibSpotify.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLibSpotify.framework;
-			remoteRef = 50EECB0515CAA856006E54FA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		50EECB0815CAA856006E54FA /* CocoaLSTests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = CocoaLSTests.app;
-			remoteRef = 50EECB0715CAA856006E54FA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		50EECAD915CAA82C006E54FA /* Resources */ = {
@@ -284,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F180BCEF19F80504005B29EF /* SpotifyHelper.m in Sources */,
 				50EECAEC15CAA82C006E54FA /* main.m in Sources */,
 				F180BCEB19F8031B005B29EF /* MyoHelper.mm in Sources */,
 				50EECAF315CAA82C006E54FA /* AppDelegate.m in Sources */,
@@ -293,14 +216,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50EECB0B15CAA868006E54FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLibSpotify;
-			targetProxy = 50EECB0A15CAA868006E54FA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50EECAE815CAA82C006E54FA /* InfoPlist.strings */ = {

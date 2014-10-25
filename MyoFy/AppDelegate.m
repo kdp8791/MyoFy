@@ -44,6 +44,35 @@
             [self.myo startUpdate]; // Start Getting Updates From Myo (This Command Runs on Background Thread In Implemenation)
         });
     });
+    
+    CGEventSourceRef src =
+    CGEventSourceCreate(kCGEventSourceStateHIDSystemState);
+    
+    CGEventRef cmdd = CGEventCreateKeyboardEvent(src, (CGKeyCode)96, true);
+    CGEventRef cmdu = CGEventCreateKeyboardEvent(src, (CGKeyCode)96, false);
+    CGEventRef spcd = CGEventCreateKeyboardEvent(src, 0x31, true);
+    CGEventRef spcu = CGEventCreateKeyboardEvent(src, 0x31, false);
+    
+    CGEventSetFlags(spcd, kCGEventFlagMaskCommand);
+    CGEventSetFlags(spcu, kCGEventFlagMaskCommand);
+    
+    CGEventTapLocation loc = kCGHIDEventTap; // kCGSessionEventTap also works
+    CGEventPost(loc, cmdd);
+    CGEventPost(loc, spcd);
+    CGEventPost(loc, spcu);
+    CGEventPost(loc, cmdu);
+    
+    CFRelease(cmdd);
+    CFRelease(cmdu);
+    CFRelease(spcd);
+    CFRelease(spcu);
+    CFRelease(src);
+}
+
+-(void)keyUp:(NSEvent *)event
+{
+    NSLog(@"Characters: %@", [event characters]);
+    NSLog(@"KeyCode: %hu", [event keyCode]);
 }
 
 -(void)myo:(Myo *)myo onPose:(MyoPose *)pose timestamp:(uint64_t)timestamp
