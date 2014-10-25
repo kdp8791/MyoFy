@@ -10,7 +10,6 @@
 
 @interface AppDelegate()
 @property (nonatomic, strong) Myo *myo;
-@property (nonatomic, strong) NSAppleScript *appleScript;
 @property (atomic, assign) BOOL isLocked;
 @property (atomic, strong) NSTimer *timer;
 @end
@@ -28,11 +27,6 @@
     
     self.myo = [[Myo alloc] initWithApplicationIdentifier:@"co.keyurpatel.myofy"];
     self.myo.delegate = self;
-    
-    // Set AppleScript
-    NSDictionary *errs;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SpotifyScript" ofType:@"scpt"];
-    self.appleScript = [[NSAppleScript alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&errs];
     
     // Create Block To Run Commands In Background Thread
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, (unsigned long)NULL), ^(void) {
