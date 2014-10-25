@@ -16,6 +16,7 @@
 		F1403EE419F83F3D007086E2 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; };
 		F1403EE519F83F3D007086E2 /* myo.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = F180BCE519F801B9005B29EF /* myo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F180BCEB19F8031B005B29EF /* MyoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F180BCEA19F8031B005B29EF /* MyoHelper.mm */; };
+		F1C7850419FBE3C4008C2668 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C7850319FBE3C4008C2668 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		F180BCE519F801B9005B29EF /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = MyoFy/myo.framework; sourceTree = "<group>"; };
 		F180BCE919F8031B005B29EF /* MyoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyoHelper.h; sourceTree = "<group>"; };
 		F180BCEA19F8031B005B29EF /* MyoHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyoHelper.mm; sourceTree = "<group>"; };
+		F1C7850319FBE3C4008C2668 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C7850419FBE3C4008C2668 /* Carbon.framework in Frameworks */,
 				F1403EE419F83F3D007086E2 /* myo.framework in Frameworks */,
 				50EECAE015CAA82C006E54FA /* Cocoa.framework in Frameworks */,
 			);
@@ -84,6 +87,7 @@
 		50EECADE15CAA82C006E54FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1C7850319FBE3C4008C2668 /* Carbon.framework */,
 				F180BCE519F801B9005B29EF /* myo.framework */,
 				50EECADF15CAA82C006E54FA /* Cocoa.framework */,
 				50EECAE115CAA82C006E54FA /* Other Frameworks */,
